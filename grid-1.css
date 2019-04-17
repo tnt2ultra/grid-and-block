@@ -1,0 +1,82 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "article"
+        "footer";
+    grid-template-rows: 50px 1fr 50px;  
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.invisible {
+    display: none;
+}
+
+#mainArticle {
+    padding: 1em;
+    background: white;
+}    
+
+#pageHeader, #pageFooter {
+    padding: 1em;
+    background: lightgray;
+}
+
+#pageHeader {
+    grid-area: header;  
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+#mainArticle { 
+    grid-area: article;     
+    position: relative;
+}
+
+#mainArticle > .addButton > a{
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    font-size: 6em;
+    color: darkgreen;
+}
+
+#mainArticle > .delButton > a {
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    font-size: 6em;
+    color: red;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 2vw;
+}
+
+.grid > div {
+    font-size: 5vw;
+    padding: .5em;
+    background: gold;
+    text-align: center;
+}
+
+.leftFooter{
+    display: block;
+    float: left;
+}
+
+.rightFooter{
+    display: block;
+    float: right;
+}
