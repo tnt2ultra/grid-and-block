@@ -1,23 +1,25 @@
 <!doctype html>
 <html>
+
 <head>
-<title>Example</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="grid-1.css" type="text/css" rel="stylesheet"/>
+    <title>Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="grid-1.css" type="text/css" rel="stylesheet" />
 </head>
+
 <body>
     <header id="pageHeader">Add/remove random block. Change window size!</header>
     <article id="mainArticle">
         Click "Plus" to add new block. Click block to select it. Click red cross to delete selected blocks.
-        
+
         <div id="main" class="grid">
         </div>
 
-        <div id="delete" class="delButton invisible"><a href="#" onclick="return deleteClick(this);">&#10006;</a></div>
-        <div id="add" class="addButton"><a href="#" onclick="return addClick(this);">&#10010;</a></div>
+        <div id="delete" class="delButton invisible"><a href="#" onclick="return deleteClick();">&#10006;</a></div>
+        <div id="add" class="addButton"><a href="#" onclick="return addClick();">&#10010;</a></div>
     </article>
-    
+
     <footer id="pageFooter">
         <div id="left" class="leftFooter">
             Testing grid
@@ -29,4 +31,5 @@
 
     <script src="grid-1.js"></script>
 </body>
+
 </html>

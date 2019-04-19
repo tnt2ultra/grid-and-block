@@ -1,15 +1,15 @@
-body { 
+body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "article"
         "footer";
-    grid-template-rows: 50px 1fr 50px;  
+    grid-template-rows: 50px 1fr 50px;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     height: 100vh;
     margin: 0;
-} 
+}
 
 a {
     text-decoration: none;
@@ -22,27 +22,28 @@ a {
 #mainArticle {
     padding: 1em;
     background: white;
-}    
+}
 
-#pageHeader, #pageFooter {
+#pageHeader,
+#pageFooter {
     padding: 1em;
     background: lightgray;
 }
 
 #pageHeader {
-    grid-area: header;  
+    grid-area: header;
 }
 
 #pageFooter {
     grid-area: footer;
 }
 
-#mainArticle { 
-    grid-area: article;     
+#mainArticle {
+    grid-area: article;
     position: relative;
 }
 
-#mainArticle > .addButton > a{
+#mainArticle>.addButton>a {
     position: absolute;
     bottom: 0;
     right: 2vw;
@@ -50,7 +51,7 @@ a {
     color: darkgreen;
 }
 
-#mainArticle > .delButton > a {
+#mainArticle>.delButton>a {
     position: absolute;
     bottom: 0;
     right: 10vw;
@@ -64,19 +65,19 @@ a {
     grid-gap: 2vw;
 }
 
-.grid > div {
+.grid>div {
     font-size: 5vw;
     padding: .5em;
     background: gold;
     text-align: center;
 }
 
-.leftFooter{
+.leftFooter {
     display: block;
     float: left;
 }
 
-.rightFooter{
+.rightFooter {
     display: block;
     float: right;
 }

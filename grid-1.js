@@ -16,17 +16,17 @@ function onClick(el) {
     updateScreen();
 }
 
-function addClick(Element) {
-    let main= document.getElementById("main");
+function addClick() {
+    let main = document.getElementById("main");
     let str = '<div id="id' + numDiv + '" onclick="onClick(this)">' + numDiv + '</div>';
     divArray[numDiv] = 1;
     numDiv++;
     main.innerHTML += str;
-	return false;
+    return false;
 }
 
-function deleteClick(Element) {
-    for(let i = 0; i <= divArray.length; i++) {
+function deleteClick() {
+    for (let i = 0; i <= divArray.length; i++) {
         if (divArray[i] === 0) {
             let divBlock = document.getElementById("id" + i);
             divArray[i] = -1;
@@ -37,10 +37,10 @@ function deleteClick(Element) {
         }
     }
     updateScreen();
-	return false;
+    return false;
 }
 
-function updateScreen() {    
+function updateScreen() {
     let delButton = document.getElementById("delete");
     if (numSelected === 0) {
         delButton.style.display = 'none';
