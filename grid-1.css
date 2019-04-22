@@ -48,13 +48,13 @@ a {
     bottom: 0;
     right: 2vw;
     font-size: 6em;
-    color: darkgreen;
+    color: blue;
 }
 
 #mainArticle>.delButton>a {
     position: absolute;
     bottom: 0;
-    right: 10vw;
+    right: 1em;
     font-size: 6em;
     color: red;
 }
